@@ -1,0 +1,190 @@
+	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+	
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	  font-family: "Open Sans", sans-serif;
+	}
+	
+	body {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  min-height: 100vh;
+	  width: 100%;
+	  padding: 0 10px;
+	  background: #000;
+	  position: relative;
+	}
+	
+	body::before {
+	  content: "";
+	  position: absolute;
+	  inset: 0;
+	  background: url("index_images/bg.jpg");
+	  background-size: cover;
+	  background-position: center;
+	  filter: brightness(0.4) blur(2px);
+	  z-index: -1;
+	}
+	
+	.wrapper {
+	  width: 400px;
+	  border-radius: 8px;
+	  padding: 30px;
+	  text-align: center;
+	  border: 1px solid rgba(255, 255, 255, 0.5);
+	  backdrop-filter: blur(8px);
+	  -webkit-backdrop-filter: blur(8px);
+	}
+	
+	form {
+	  display: flex;
+	  flex-direction: column;
+	}
+	
+	h2 {
+	  font-size: 2rem;
+	  margin-bottom: 20px;
+	  color: #fff;
+	}
+	
+	.input-field {
+	  position: relative;
+	  border-bottom: 2px solid #ccc;
+	  margin: 15px 0;
+	}
+	
+	.input-field label {
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  transform: translateY(-50%);
+	  color: #fff;
+	  font-size: 16px;
+	  pointer-events: none;
+	  transition: 0.15s ease;
+	}
+	
+	.input-field input {
+	  width: 100%;
+	  height: 40px;
+	  background: transparent;
+	  border: none;
+	  outline: none;
+	  font-size: 16px;
+	  color: #fff;
+	  padding: 0;
+	}
+	
+	.input-field input:focus ~ label,
+	.input-field input:valid ~ label {
+	  font-size: 0.8rem;
+	  top: 10px;
+	  transform: translateY(-120%);
+	}
+	
+	.select-field {
+	  position: relative;
+	  border-bottom: 2px solid #ccc;
+	  margin: 15px 0;
+	}
+	
+	.select-field label {
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  transform: translateY(-50%);
+	  color: #fff;
+	  font-size: 16px;
+	  pointer-events: none;
+	  transition: 0.15s ease;
+	}
+	
+	.select-field select {
+	  width: 100%;
+	  height: 40px;
+	  background: transparent;
+	  border: none;
+	  outline: none;
+	  font-size: 16px;
+	  color: #fff;
+	  appearance: none;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  cursor: pointer;
+	  padding-right: 30px; /* Space for dropdown icon */
+	}
+	
+	.select-field select option {
+	  background-color: #fff;
+	  color: #333;
+	}
+	
+	.select-field select option:checked {
+	  background-color: #007bff; /* Blue background for selected option */
+	  color: #fff; /* White text for contrast */
+	}
+	
+	.select-field select:focus ~ label,
+	.select-field select:valid ~ label {
+	  font-size: 0.8rem;
+	  top: 10px;
+	  transform: translateY(-120%);
+	}
+	
+	/* Dropdown icon */
+	.select-field::after {
+	  content: "▾";
+	  position: absolute;
+	  right: 10px;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  color: #ccc;
+	  pointer-events: none;
+	}
+	
+	button[type="submit"] {
+	  background: #fff;
+	  color: #000;
+	  font-weight: 600;
+	  border: none;
+	  padding: 12px 20px;
+	  cursor: pointer;
+	  border-radius: 3px;
+	  font-size: 16px;
+	  border: 2px solid transparent;
+	  transition: 0.3s ease;
+	  margin-top: 20px;
+	}
+	
+	button[type="submit"]:hover {
+	  color: #fff;
+	  border-color: #fff;
+	  background: rgba(255, 255, 255, 0.15);
+	}
+	
+	.register {
+	  text-align: center;
+	  margin-top: 30px;
+	  color: #fff;
+	}
+	
+	.register a {
+	  color: #efefef;
+	  text-decoration: none;
+	}
+	
+	.register a:hover {
+	  text-decoration: underline;
+	}
+	
+	/* Error message styling */
+	p[style="color: red;"] {
+	  text-align: center;
+	  margin-bottom: 15px;
+	  padding: 5px;
+	  background-color: #ffebee;
+	  border-radius: 3px;
+	}
