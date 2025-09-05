@@ -40,7 +40,7 @@ A full-stack web application for managing library operations such as **book inve
 | 🏠 Admin Dashboard | ![Admin Dashboard](screenshots/admin_dashboard.png) |
 | 🏠 User Dashboard | ![User Dashboard](screenshots/user_dashboard.png) |
 | 📚 Book Management | ![Book Management](screenshots/book_management.png) |
-| 👤 Borrowing Requests | ![Borrowing Requests](screenshots/borrowing_Requests.png) |
+| 👤 Borrowing Requests | ![Borrowing Requests](screenshots/borrowing_requests.png) |
 
 
 ---
